@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人主页 | 创意与技术的结合</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Font Awesome 图标库 (用于图标展示) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- 2. 导航设计 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Alex.Design</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#portfolio">作品集</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3. 首屏设计 -->
+    <section id="home" class="hero-section">
+        <div class="hero-content fade-in-up">
+            <div class="hero-text">
+                <h1>你好，我是 <span class="highlight">群狼获客</span></h1>
+                <h2>UI设计师 & 前端开发者</h2>
+                <p>专注于创造简洁、美观且高互动的网页体验。热衷于将设计美学与代码逻辑完美融合。</p>
+                <a href="#contact" class="btn">联系我</a>
+            </div>
+            <div class="hero-image">
+                <!-- 使用占位图，用户后续可替换 -->
+                <img src="https://ui-avatars.com/api/?name=Alex&background=6c63ff&color=fff&size=300" alt="个人头像">
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 关于我 (核心简介) -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-simple-card scroll-reveal">
+                <p>我是一名充满热情的技术探索者，拥有3年的Web开发经验。我喜欢把复杂的问题简单化，用代码构建有温度的产品。</p>
+                <div class="tags-container">
+                    <span class="tag">Web开发</span>
+                    <span class="tag">UI/UX设计</span>
+                    <span class="tag">摄影爱好者</span>
+                    <span class="tag">开源贡献</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 个人档案区 (双栏：详细介绍 + 技能图标) -->
+    <section id="profile" class="section-padding bg-light">
+        <div class="container">
+            <div class="profile-grid">
+                <div class="profile-text scroll-reveal">
+                    <h3>我的旅程</h3>
+                    <p>从第一次写出 "Hello World" 开始，我就深深爱上了编程。在过去的几年里，我自学了HTML, CSS, JavaScript，并逐渐掌握了现代前端框架。除此之外，我还对色彩理论和排版设计有着浓厚的兴趣。</p>
+                    <p>我相信好的设计不仅仅是好看，更是好用。在每一个项目中，我都致力于寻找美学与功能的平衡点。</p>
+                </div>
+                <div class="profile-skills scroll-reveal">
+                    <h3>核心技能</h3>
+                    <div class="skill-icons">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 动态展示区 (图片轮播) -->
+    <section id="gallery" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">生活瞬间</h2>
+            <div class="carousel-container scroll-reveal">
+                <div class="carousel-slide">
+                    <!-- 占位图片 -->
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" alt="工作环境" class="active">
+                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="风景摄影">
+                    <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="设计草图">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="代码屏幕">
+                </div>
+                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 作品(项目)展示区 -->
+    <section id="portfolio" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">精选作品</h2>
+            <div class="portfolio-grid">
+                <!-- 作品卡片 1 -->
+                <div class="portfolio-card scroll-reveal">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x250/6c63ff/ffffff?text=Project+1" alt="作品1">
+                        <div class="card-overlay">
+                            <a href="#" class="preview-btn">预览项目</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>电商仪表盘</h3>
+                        <p>基于Vue.js的数据可视化后台管理系统。</p>
+                    </div>
+                </div>
+                <!-- 作品卡片 2 -->
+                <div class="portfolio-card scroll-reveal">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x250/ff6584/ffffff?text=Project+2" alt="作品2">
+                        <div class="card-overlay">
+                            <a href="#" class="preview-btn">预览项目</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>个人博客主题</h3>
+                        <p>简约风格的Hexo博客主题设计。</p>
+                    </div>
+                </div>
+                <!-- 作品卡片 3 -->
+                <div class="portfolio-card scroll-reveal">
+                    <div class="card-image">
+                        <img src="https://via.placeholder.com/400x250/33a1fd/ffffff?text=Project+3" alt="作品3">
+                        <div class="card-overlay">
+                            <a href="#" class="preview-btn">预览项目</a>
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <h3>天气小程序</h3>
+                        <p>实时查询天气的微信小程序案例。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. 底部信息 -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-weixin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">© 2023 Alex Design. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 10. 返回顶部按钮 -->
+    <button id="back-to-top" title="返回顶部">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
